@@ -1,2 +1,2 @@
-# vulnweblog
+# vulnourblog
 Vulnerable Blog Application
