@@ -13,7 +13,7 @@ include ("header.php");
 
             <!-- First Blog Post -->
             <h2>
-                <a href="#">Blog Post Title</a>
+                <a href="post.php">Blog Post Title</a>
             </h2>
             <p class="lead">
                 by <a href="index.php">Start Bootstrap</a>
