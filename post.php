@@ -24,7 +24,7 @@ include ("header.php");
             <hr>
 
             <!-- Preview Image -->
-            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+            <img class="img-responsive" src="900x300.png" alt="">
 
             <hr>
 
