@@ -2,6 +2,11 @@
 <footer>
     <div class="row">
         <div class="col-lg-12">
+            <p>
+              <span><a href="https://barisesen.con">Barisesen.com</a></span>
+              <span><a href="http://erdemoflaz.con">Erdemoflaz.com</a></span>
+
+            </p>
             <p> &copy; 2016 </p>
         </div>
         <!-- /.col-lg-12 -->
@@ -13,7 +18,7 @@
 <!-- /.container -->
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<!-- <script src="js/jquery.js"></script> -->
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
@@ -21,4 +26,3 @@
 </body>
 
 </html>
-

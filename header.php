@@ -1,5 +1,7 @@
 <?php
-require_once("settings.php");
+require_once("include/settings.php");
+require_once("include/functions.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +28,7 @@ require_once("settings.php");
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/jquery.js"></script>
 
 </head>
 
