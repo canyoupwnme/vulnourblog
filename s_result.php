@@ -1,10 +1,17 @@
 <?php
+
+# ARAMA SONUÇLARI SEARCH RESULTS BURADA LİSTELENECEKTİR
+
+
 require_once("header.php");
 ?>
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-            <?php homePageDom(); ?>
+            <?php
+            // homePageDom();
+			         searchPageDom($_GET["key"]);
+            ?>
         </div>
         <!-- Blog Sidebar Widgets Column -->
         <div class="col-md-4">
@@ -14,5 +21,27 @@ require_once("header.php");
     <!-- /.row -->
     <hr>
 <?php
+
 require_once("footer.php");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>

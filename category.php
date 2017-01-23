@@ -1,5 +1,16 @@
 <?php
 include ("header.php");
+
+if ($_GET["id"]) {
+
+  $id = $_GET["id"];
+
+  $query = $db-> prepare("SELECT category_name FROM categories where category_id = ? ");
+  $query -> execute(array($id));
+  $query -> setFetchMode(PDO::FETCH_CLASS, 'categories');
+  $category_name = $query -> fetchAll();
+  $category_name = $category_name[0]["category_name"];
+
 ?>
     <div class="row">
 
@@ -7,67 +18,22 @@ include ("header.php");
         <div class="col-md-8">
 
             <h1 class="page-header">
-                Page Heading
-                <small>Secondary Text</small>
+                <?= $category_name; ?>
+                <!-- <small>Secondary Text</small> -->
             </h1>
 
-            <!-- First Blog Post -->
-            <h2>
-                <a href="#">Blog Post Title</a>
-            </h2>
-            <p class="lead">
-                by <a href="index.php">Start Bootstrap</a>
-            </p>
-            <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
-            <hr>
-            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-            <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-            <hr>
-
-            <!-- Second Blog Post -->
-            <h2>
-                <a href="#">Blog Post Title</a>
-            </h2>
-            <p class="lead">
-                by <a href="index.php">Start Bootstrap</a>
-            </p>
-            <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
-            <hr>
-            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
-            <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-            <hr>
-
-            <!-- Third Blog Post -->
-            <h2>
-                <a href="#">Blog Post Title</a>
-            </h2>
-            <p class="lead">
-                by <a href="index.php">Start Bootstrap</a>
-            </p>
-            <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
-            <hr>
-            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.</p>
-            <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-            <hr>
+            <!--  Blog Posts -->
+              <?php categoryListDom($id); //sql inj?>
 
             <!-- Pager -->
-            <ul class="pager">
+            <!-- <ul class="pager">
                 <li class="previous">
                     <a href="#">&larr; Older</a>
                 </li>
                 <li class="next">
                     <a href="#">Newer &rarr;</a>
                 </li>
-            </ul>
+            </ul> -->
 
         </div>
 
@@ -83,5 +49,10 @@ include ("header.php");
 
     <hr>
 <?php
+}else {
+  echo "Hata";
+}
+
 include ("footer.php");
+
 ?>
