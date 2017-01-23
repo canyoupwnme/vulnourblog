@@ -3,9 +3,7 @@
     <div class="row">
         <div class="col-lg-12">
             <p>
-              <span><a href="https://barisesen.con">Barisesen.com</a></span>
-              <span><a href="http://erdemoflaz.con">Erdemoflaz.com</a></span>
-
+              <span><a href="https://canyoupwn.me">Canyoupwnme</a></span>
             </p>
             <p> &copy; 2016 </p>
         </div>
