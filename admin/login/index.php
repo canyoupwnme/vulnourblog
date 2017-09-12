@@ -7,11 +7,9 @@
     $count = login($_POST["username"],$_POST["password"]);
 
     if ($count == 1) {
-      setcookie("isadmin", "c4ca4238a0b923820dcc509a6f75849b", time() + (60*60*24),'/');
-
-      header('Location: ../index.php');
+      header('Location: auth.php');
     } else {
-      setcookie("isadmin", "cfcd208495d565ef66e7dff9f98764da", time() + (60*60*24),'/');
+      print("<p>Girdiğiniz bilgiler hatalı, Lütfen kontrol ederek tekrar deneyiniz.</p>");
     }
 
   }
