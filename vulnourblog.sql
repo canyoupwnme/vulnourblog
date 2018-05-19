@@ -105,7 +105,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `email`, `created_at`) VALUES
-(1, 'admin', '123456', 'barisesennn@gmail.com', '2017-01-19 13:59:40');
+(1, 'admin', 'n0tth4th4rd', 'admin@canyoupwn.me', '2017-01-19 13:59:40');
 
 --
 -- Indexes for dumped tables
