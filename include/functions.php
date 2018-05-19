@@ -15,7 +15,6 @@ function homePagePostListData() {
 function addPost($title,$text,$target_file,$category_id) {
   include("settings.php");
 
-    echo $title."<br>".$text."<br>".$target_file."<br>".$category_id;
     $post = $db->prepare('INSERT INTO posts (title, text, category_id, user_id, photo_path) values(?,?,?,?,?)');
     $post->execute(array($title, $text, $category_id, 1, $target_file));
 

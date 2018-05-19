@@ -1,11 +1,8 @@
 <?php
-
   if(isset($_POST["title"])){
-
      $category_name = $_POST["title"];
      addCategory($category_name);
   }
-
 ?>
 
 <h2 class="header">KATEGORİ EKLE</h2>

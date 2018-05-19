@@ -7,7 +7,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Vulnour panel</title>
+  <title>VulnOur panel</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -310,7 +310,6 @@
 	background: -ms-linear-gradient(top,rgb(255,255,255),rgb(245,245,245));
 	background: linear-gradient(top,rgb(255,255,255),rgb(245,245,245));
 }
-/*statusbar底部功能按钮*/
 .statusbar {
 	position: absolute;
 	bottom: 0;
